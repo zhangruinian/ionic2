@@ -1,0 +1,205 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Prompt</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button color="secondary" block (click)="doPrompt()">Show Prompt Alert</button>
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="cart" item-left></ion-icon>
+        Shopping
+      </button>
+
+      <button ion-item>
+        <ion-icon name="medical" item-left></ion-icon>
+        Hospital
+      </button>
+
+      <button ion-item>
+        <ion-icon name="cafe" item-left></ion-icon>
+        Cafe
+      </button>
+
+      <button ion-item>
+        <ion-icon name="paw" item-left></ion-icon>
+        Dog Park
+      </button>
+
+      <button ion-item>
+        <ion-icon name="beer" item-left></ion-icon>
+        Pub
+      </button>
+
+      <button ion-item>
+        <ion-icon name="planet" item-left></ion-icon>
+        Space
+      </button>
+
+    </ion-list>
+  </ion-card>
+  <ion-item>
+    <ion-label>Start Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+  </ion-item>
+
+  <ion-fab center middle>
+    <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="right">
+      <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-icon name="heart"></ion-icon>                    <!-- active -->
+  <ion-icon name="heart" isActive="false"></ion-icon>  <!-- inactive -->
+
+  <ion-list no-border>
+
+    <ion-list-header>
+      Classes
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-icon name='planet' item-left></ion-icon>
+      Astronomy
+     <!-- <ion-note item-right>
+        To the moon
+      </ion-note>-->
+    </ion-item>
+
+    <ion-item>
+      <!--toggle？-->
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Muggle Studies
+      </ion-label>
+      <ion-icon name='body' item-left></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='leaf' item-left></ion-icon>
+      Herbology
+      <ion-icon name='rose' item-right color="secondary"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='flask' item-left></ion-icon>
+      Potions
+      <ion-note item-right>
+        Poisonous
+      </ion-note>
+    </ion-item>
+
+
+
+  </ion-list>
+
+
+  <ion-list>
+
+    <ion-list-header>
+      Activities
+    </ion-list-header>
+
+    <ion-item>
+      Incantation
+      <ion-icon name='color-wand' item-left></ion-icon>
+      <ion-note item-right>Crucio!</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle>
+      <ion-label>
+        Quidditch Practice
+      </ion-label>
+      <ion-icon name='brush' item-left></ion-icon>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name='wine' item-left></ion-icon>
+      Mead Drinking
+      <ion-note item-right>Yes please</ion-note>
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-list>
+
+    <ion-list-header>
+      Friends
+    </ion-list-header>
+
+    <ion-item>
+      <ion-icon name='flash' item-left></ion-icon>
+      Harry
+      <ion-note item-right>The boy who lived</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='book' item-left></ion-icon>
+      Hermoine
+      <ion-note item-right>Muggle-born</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='beer' item-left></ion-icon>
+      Ron
+      <ion-note item-right>Brilliant!</ion-note>
+    </ion-item>
+
+
+  </ion-list>
+  <!--sliding-list-->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <!--刘看山头像图片-->
+          <!--<img src="http://pic2.zhimg.com/9b7d01ba5f9594d793909b153a285969_r.jpg"/>-->
+          <img src="assets/img/lks.jpg"/>
+        </ion-avatar>
+        <h2>Slimer</h2>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="mail"></ion-icon>
+          Email
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-item>
+    <ion-range >
+      <ion-icon range-left small name="sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+</ion-content>
+
